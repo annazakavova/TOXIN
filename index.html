@@ -45,27 +45,121 @@
 				</div>
 			</div>
 		</header>
-
 		<main class="main">
-			<div class="main__picture">
-				<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-					<div class="carousel-inner">
-					  <div class="carousel-item active">
-						 <img src="../TOXIN/img/main/2.png" class="d-block w-100" alt="picture2">
-					  </div>
-					  <div class="carousel-item">
-						 <img src="../TOXIN/img/main/3.png" class="d-block w-100" alt="picture3">
-					  </div>
-					  <div class="carousel-item">
-						 <img src="../TOXIN/img/main/1.png" class="d-block w-100" alt="picture1">
-					  </div>
-					</div>
-				 </div>
+			<div class="img__container">
+				<div class="main__picture">
+					<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+						<div class="carousel-inner">
+						  <div class="carousel-item active">
+							 <img src="../TOXIN/img/main/2.png" class="d-block" alt="picture2">
+						  </div>
+						  <div class="carousel-item">
+							 <img src="../TOXIN/img/main/3.png" class="d-block" alt="picture3">
+						  </div>
+						  <div class="carousel-item">
+							 <img src="../TOXIN/img/main/1.png" class="d-block" alt="picture1">
+						  </div>
+						</div>
+					 </div>
+				</div>
 			</div>
 			<div class="container">
+				<section class="main__choose-number">
+					<div class="choose-number__form">
+						<h1 class="choose-number__form-title">Найдём номера под ваши пожелания</h1>
+						<div class="choose-number__form-date">
+							<div class="choose-number__form-date-arrival">
+								<p class="choose-number__form-text">прибытие</p>
+								<input type="date" name="date">
+							</div>
+							<div class="choose-number__form-date-departure">
+								<p class="choose-number__form-text">выезд</p>
+								<input type="date" name="date">
+							</div>
+						</div>
+						<div class="choose-number__form-guests">
+							<form action="#">
+									<p class="choose-number__form-text">гости</p>
+								<select class="form-guest" name="guests">
+									<option value="#">взрослые</option>
+									<option value="#">дети</option>
+									<option value="#">младенцы</option>
+								</select>
+							</form>
+						</div>
+						<div class="header__button-big btn-big">
+							<a href="#" class="choose-number__button">подобрать номер</a>
+							<span class="material-icons">arrow_forward</span>
+						</div>
+					</div>
+				</section>
+				<section class="main__title">
+					<span class="main__text">
+						Лучшие номера для вашей работы, отдыха и просто вдохновения
+					</span>
+				</section>
 			</div>
 		</main>
-		<footer class="footer"></footer>
+		<footer class="footer">
+			<div class="container">
+				<section class="footer__navigation">
+					<div class="footer__navigation-logo">
+						<div class="footer__navigation-logo-img">
+							<img class="navigation-logo-img" src="./img/header/logo.svg" alt="footer-logo">
+							<img src="./img/header/name.svg" alt="footer-TOXIN"></div>
+							<p>Бронирование номеров в лучшем<br>отеле 2019 года по версии<br>ассоциации «Отельные взгляды»</p>
+					</div>
+					<div class="footer-nav">
+						<p>навигация</p>
+						<div class="footer-nav-list-nav"></div>
+						<ul>
+							<li><a href="#" class="footer-nav-list-nav">О нас</li></a>
+							<li><a href="#" class="footer-nav-list-nav">Новости</li></a>
+							<li><a href="#" class="footer-nav-list-nav">Служба поддержки</li></a>
+							<li><a href="#" class="footer-nav-list-nav">Услуги</li></a>
+						</ul>
+					</div>
+					<div class="footer-nav">
+						<p>о нас</p>
+						<div class="footer-nav-list-about-us"></div>
+						<ul>
+							<li><a href="#" class="footer-nav-list-about-us">О сервисе</li></a>
+							<li><a href="#" class="footer-nav-list-about-us">Наша команда</li></a>
+							<li><a href="#" class="footer-nav-list-about-us">Вакансии</li></a>
+							<li><a href="#" class="footer-nav-list-about-us">Инвесторы</li></a>
+						</ul>
+					</div>
+					<div class="footer-nav">
+						<p  class="footer-nav-list3-space">Служба поддержки</p>
+						<div class="footer-nav-list-support"></div>
+						<ul>
+							<li><a href="#" class="footer-nav-list-support">Соглашения</li></a>
+							<li><a href="#" class="footer-nav-list-support">Сообщества</li></a>
+							<li><a href="#" class="footer-nav-list-support">Связь с нами</li></a>
+						</ul>
+					</div>
+					<div class="footer-nav">
+						<p>Подписка</p>
+						<p>Получайте специальные предложения и новости сервиса</p>
+						<form action="" class="footer-email">
+							<p><input class="email" type="text" placeholder="Email"><span class="material-icons">arrow_forward</span></p>
+						</form>
+					</div>
+				</section>
+				<section class="footer__contacts">
+					<div class="footer__contacts-copyright">
+						<p>Copyright © 2018 Toxin отель. Все права защищены.</p>
+					</div>
+					<div class="footer__contacts-icons">
+						<ul>
+							<li class="icons"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+							<li class="icons"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+							<li class="icons"><a href="#"><i class="fab fa-instagram"></i></a></li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</footer>
 	</div>
 	
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
