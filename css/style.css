@@ -124,10 +124,27 @@ body{
 	flex-wrap: wrap;
 	margin: 20px 30px 0 30px;
 }
-.choose-number__form-date-arrival {
+.choose-number__form-date-text-form {
+
+}
+.choose-number__form-date-arrival-text {
+	margin-bottom: -10px;
+}
+.choose-number__form-date-arrival-form {
 	border: 1px solid rgba(31, 32, 65, 0.25);
 	border-radius: 4px;
-	margin-right: 20px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	padding: 11.56px 5px 8.44px 15px;	
+}
+.choose-number__form-date-arrival-form input {
+	display: none;
+}
+.choose-number__form-date-arrival-form span {
+	font-size: 24px;
+	line-height: 100%;
+	margin-left: 5px;
 }
 .choose-number__form-date-departure {
 	border: 1px solid rgba(31, 32, 65, 0.25);
@@ -190,16 +207,21 @@ body{
 }
 .footer__navigation-logo-img {
 	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
 }
 .navigation-logo-img {
 	margin-right: 12.5px;
-	margin-bottom: 20px;
 }
 .footer-nav {
 }
 .footer-nav p {
-	font-weight: bold;
+	font-weight: 700;
 	color: #1F2041;
+}
+.footer-nav .footer-nav-text {
+	font-weight: 400;
+	color: rgba(31, 32, 65, 0.75);
 }
 .footer-nav ul {
 	padding: 0;
@@ -214,11 +236,12 @@ body{
 }
 .footer-email p {
 	display: flex;
-	justify-content: flex-end;
 	margin-top: 10px;
+	margin-left: 10px;
 }
 .footer-email span {
 	width: 44px;
+	margin-right: -10px;
 	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); /* градиент */
 	-webkit-background-clip: text; /* фон уходит, остается текст */
 	-webkit-text-fill-color: transparent; /* градиент */
@@ -230,18 +253,26 @@ body{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between ;
+	align-items: center;
+	text-align: center;
 }
-.footer__contacts-copyright {
+.footer__contacts-copyright p {
+	margin: 0;
+}
+.footer__contacts-icons ul {
+	display: flex;
+	margin-bottom: 0;
+}
+.footer__contacts-icons ul > * + *{ /* любой элемент на первом уровне+его сосед справо */
+	margin-left: 20px;
 }
 .footer__contacts-icons {
 }
 .icons {
 }
 .fab {
-}
-.fa-twitter {
-}
-.fa-facebook-square {
-}
-.fa-instagram {
+	font-size: 24px;
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); /* градиент */
+	-webkit-background-clip: text; /* фон уходит, остается текст */
+	-webkit-text-fill-color: transparent; /* градиент */
 }
